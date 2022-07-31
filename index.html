@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <h1>welcome</h1>
+        <button id="loginb" onclick="toggle_l()">login</button>
+        <button id="signupb" onclick="toggle_s()">signup</button>
+    </div>
+    
+    <div class="login" id="login" style="display: none;">
+        <form action="php/login.php" method="post">
+            <h2>please enter email</h2>
+            <input type="email" name="sname" id="sname">
+            <h2>enter password</h2>
+            <input type="password" name="spwd" id="spwd">
+            <button disabled="disabled">forget password</button>
+            <button type="submit">login</button>
+        </form>
+    </div>
+    <div class="signup" id="signup" style="display: none;">
+        <form action="php/signup.php" method="post">
+            <h2>please enter name</h2>
+            <input type="text" name="name" id="name">
+            <h2>enter email</h2>
+            <input type="email" name="email" id="email">
+            <h2>plaese set up a password</h2>
+            <input type="password" name="password" id="password">
+            <h2>please confirm password</h2>
+            <input type="password" name="confirm" id="confirm">
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </form>
+    </div>
+   
+
+    <script>
+        function toggle_l(){
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.display = "none";
+        } else {
+        x.style.display = "none";
+        }
+    }
+    function toggle_s(){
+        var x = document.getElementById("signup");
+        var y = document.getElementById("login");
+        if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.display = "none";
+        } else {
+        x.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>

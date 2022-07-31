@@ -1,0 +1,40 @@
+.navbar{
+    background-color: #2e3440;
+}
+.heading{
+    color: white;
+}
+.maindiv{
+    display: flex;
+    flex-direction: row;
+}
+.files{
+    min-width: 150px;
+    resize: horizontal;
+    overflow: auto;
+    border-right: 1px solid #81A1C1 !important;
+    background-color: #4c566a;
+    height: 94vh;
+    color: white;
+}
+.edit{
+    height: 50vh;
+}
+.output{
+    /*background-color: #491037;*/
+    background-color: darkslategray;
+    width: 90.25vw;
+   /* min-width: 70vw; */
+    min-height: 37.5vh;
+    overflow-y: auto;
+}
+.output_heading{
+    background-color: #2E3440;
+    color: white;
+    padding: 5px;
+    border-top: 1px solid #81A1C1 !important;
+}
+.editor_nav{
+    background-color: #3B4252;
+    border-bottom: 1px solid #81A1C1 !important;
+}
